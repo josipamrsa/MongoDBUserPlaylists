@@ -49,7 +49,7 @@ namespace UserPlaylists
             // Povezivanje na bazu podataka
 
             MongoClient mgClient = new MongoClient("mongodb://localhost:27017");
-            userPlaylistDatabase = mgClient.GetDatabase("UserPlaylist");                           
+            userPlaylistDatabase = mgClient.GetDatabase("UserPlaylists");                           
         }
         
         public static void CreateCollections()
@@ -80,7 +80,7 @@ namespace UserPlaylists
 
             var update = Builders<User>.Update.Set(x => x.Username, "Josipa");       
             var rezultat = userCollection.FindOneAndUpdate<User>(x => x.Username == "User1", update);
-
+            
             //update = Builders<User>.Update.Set(x => x.Username, "User1");
             //rezultat = userCollection.FindOneAndUpdate<User>(x => x.Username == "Josipa", update);
 
@@ -152,14 +152,12 @@ namespace UserPlaylists
 
         static void Main(string[] args)
         {
-            GenerateData();
-            //DatabaseConnect();
+            //GenerateData();
+            DatabaseConnect();
             //CreateCollections();
 
-            //Console.WriteLine("Kolekcije stvorene!");
-
             //UpdateRecords();
-            //FindRecords();
+            FindRecords();
             //DeleteRecords();
 
             Console.ReadKey();
