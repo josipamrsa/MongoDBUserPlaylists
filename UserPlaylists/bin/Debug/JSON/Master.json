@@ -1,0 +1,36 @@
+{
+	"Artists": [
+		{"ArtistName":"Mark Markee","Genres":["Rock", "Pop"]},
+		{"ArtistName":"Peter Parker","Genres":["Rock", "Folk"]},
+		{"ArtistName":"Andrea Andrei","Genres":["Folk", "Blues"]},
+		{"ArtistName":"George Georg","Genres":["Jazz", "Blues"]}
+		],
+
+	"Genres": [
+		{"GenreName":"Folk"},
+		{"GenreName":"Rock"},
+		{"GenreName":"Jazz"},
+		{"GenreName":"Pop"},
+		{"GenreName":"Blues"},
+		{"GenreName":"Rap"}
+		],
+
+	"Playlists": [
+		{"PlaylistName":"Playlist1","PlaylistDuration":"00:15:30","PerformanceCount":"4","ShareCount":"12","Genres":["Rock", "Pop", "Folk"]},
+		{"PlaylistName":"Playlist2","PlaylistDuration":"00:12:40","PerformanceCount":"3","ShareCount":"15","Genres":["Folk", "Jazz", "Blues"]}
+		],
+
+	"Songs": [
+		{"SongName":"Happy Song","SongDuration":"00:05:10"},
+		{"SongName":"Bad Song","SongDuration":"00:05:10"},
+		{"SongName":"Lazy Song","SongDuration":"00:05:10"},
+		{"SongName":"Lonely Song","SongDuration":"00:02:43"},
+		{"SongName":"Fuzzy Song","SongDuration":"00:02:43"},
+		{"SongName":"Long Song","SongDuration":"00:02:43"}
+		],
+
+	"Users": [
+		{"Username":"User1"},
+		{"Username":"User2"}
+	]
+}
